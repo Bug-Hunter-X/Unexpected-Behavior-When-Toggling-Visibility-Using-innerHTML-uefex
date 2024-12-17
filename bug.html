@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden initially.
+  </div>
+
+  <script>
+    // Incorrectly using innerHTML to toggle visibility
+    document.getElementById("myDiv").innerHTML = ""; // This clears the content
+  </script>
+</body>
+</html>
